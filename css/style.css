@@ -705,10 +705,6 @@ li {
 	-webkit-text-fill-color: transparent;
 }
 
-#about {
-	padding: 200px 0;
-}
-
 #about h3 {
 	font-size: 22px;
 	margin: 0 0 20px 0;
@@ -885,7 +881,7 @@ li {
 	border-bottom: 2px solid #608dfd;
 }
 
-#iFrame1 {
+.iFrame1 {
     border: 0px;
 }
 
