@@ -18,6 +18,9 @@
 	src: url('../fonts/Nevermind/NeverMindSlab/NeverMindSlab-DemiBold.ttf') format('opentype');
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
 /* Index */
 .index h1,
 .index h2,
@@ -521,9 +524,10 @@ a:focus,
 
 /* Header Section */
 #header {
-    position: relative; /* Add this line */
-    background: transparent;
-    height: fit-content;
+	position: relative;
+	/* Add this line */
+	background: transparent;
+	height: fit-content;
 }
 
 #header-title {
@@ -536,7 +540,7 @@ a:focus,
 	text-transform: uppercase;
 	margin-top: 111;
 	margin-bottom: 50px;
-	width:60%;
+	width: 60%;
 }
 
 #header-paragraph {
@@ -550,29 +554,32 @@ a:focus,
 
 .header-shadow {
 	background: rgb(0 0 0 / .2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 100%;
-    z-index: 2; /* Ensure it's above .wrapper */
-    /* Add any additional styling here */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60%;
+	height: 100%;
+	z-index: 2;
+	/* Ensure it's above .wrapper */
+	/* Add any additional styling here */
 }
 
 .header-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3; /* Ensure it's above .wrapper */
-    /* Add any additional styling here */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	/* Ensure it's above .wrapper */
+	/* Add any additional styling here */
 }
 
 #header-title-inside {
-    margin: 0px 40px;
-    width: fit-content;
+	margin: 0px 40px;
+	width: fit-content;
 }
+
 .intro_index {
 	display: table;
 	width: 100%;
@@ -698,7 +705,7 @@ li {
 
 .coloured-faded-text {
 	/* Apply the same linear gradient */
-	background: linear-gradient(to right, #9ca5ff 0%, #64cf94 100%);
+	background: linear-gradient(to right, #686868 0%, #64cf94 100%);
 	/* Use the background as the text color */
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -784,7 +791,8 @@ li {
 
 #services {
 	/* position: relative; */
-	height: 800px;
+	padding: 20px;
+	height: fit-content;
 	background: rgb(0, 0, 0, 0.2);
 }
 
@@ -815,12 +823,50 @@ li {
 	/* Adds space to the right of the first child, effectively moving the content slightly to the right */
 }
 
-#services-second-ul {
-	margin-top: -60px;
+#services ul li {
+	width: auto;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	margin: 1.5em;
+	cursor: pointer;
+	padding: 1em;
+	background: rgb(43, 43, 43);
+	position: relative;
+	color: white;
+	border-radius: 5px;
 }
 
-#services li {
-	width: max-content;
+#services ul li::before,
+#services ul li::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	border-radius: 5px;
+	width: 105%;
+	transition: all 0.4s;
+}
+
+#services ul li::before {
+	left: 0%;
+	height: 130%;
+	background: linear-gradient(to right, #147015, #48d400);
+}
+
+#services ul li::after {
+	left: -10%;
+	height: 120%;
+	background: #ffffff56;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+
+#services ul li:hover::before {
+	transform: translateX(-2.5%);
+}
+
+#services ul li:hover::after {
+	transform: translateX(15%);
 }
 
 #services-pic {
@@ -882,7 +928,7 @@ li {
 }
 
 .iFrame1 {
-    border: 0px;
+	border: 0px;
 }
 
 @media (max-width: 1090px) {
@@ -906,8 +952,8 @@ li {
 	}
 
 	#header-title {
-		width:60%;
-		justify-content:center;
+		width: 60%;
+		justify-content: center;
 	}
 
 	#profile-pic,
@@ -915,6 +961,7 @@ li {
 		width: 300px;
 		height: 200px;
 	}
+
 	h1 {
 		font-size: 36px;
 	}
@@ -989,10 +1036,6 @@ li {
 		width: 100%;
 	}
 
-	#services {
-		height: 1100px;
-	}
-
 	#service-row1 {
 		height: 100%;
 	}
@@ -1004,7 +1047,7 @@ li {
 	}
 
 	.carousel {
-		margin:auto;
+		margin: auto;
 	}
 }
 
@@ -1031,6 +1074,7 @@ li {
 		width: 300px;
 		height: 200px;
 	}
+
 	h1 {
 		font-size: 30px;
 	}
@@ -1056,9 +1100,9 @@ li {
 	}
 
 	.navbar-header {
-	    background: transparent;
-	    /* border: 20px solid transparent; */
-	    /* border-image: linear-gradient(to right, white, transparent) 1; */
+		background: transparent;
+		/* border: 20px solid transparent; */
+		/* border-image: linear-gradient(to right, white, transparent) 1; */
 	}
 
 	#service-row1 {
@@ -1128,32 +1172,32 @@ li {
 	}
 
 	.carousel {
-		margin:auto;
+		margin: auto;
 	}
 }
 
 @media (max-width: 500px) {
 	h1 {
-		font-size:23px;
+		font-size: 23px;
 	}
 }
 
 @media (max-width: 400px) {
 
 	html {
-		width:100vh;
+		width: 100vh;
 	}
-	
+
 	#header {
-		width:100vh;
+		width: 100vh;
 	}
-	
+
 	#menu a.navbar-brand {
 		font-size: 25px;
 	}
 
 	.navbar-header {
-		padding:15px;
+		padding: 15px;
 	}
 
 	#menu.navbar-default .navbar-nav>li>a {
@@ -1174,6 +1218,7 @@ li {
 
 	#profile-pic,
 	#services-pic {
+		margin: 0px;
 		width: 375px;
 		height: 250px;
 	}
@@ -1227,7 +1272,7 @@ li {
 	}
 
 	#about {
-		width:100vh;
+		width: 100vh;
 		padding: 100px 0px;
 	}
 
@@ -1260,7 +1305,6 @@ li {
 
 	#services {
 		width: 100vh;
-		height: 1500px;
 	}
 
 	#service-row1 {
@@ -1274,35 +1318,60 @@ li {
 	}
 
 	.carousel {
-		margin:auto;
+		margin: auto;
 	}
 
 	#contact {
-	width:100vh;
+		width: 100vh;
 	}
 
-	#contact .info-wrap h3{
-	font-size:35px;
+	#contact .info-wrap h3 {
+		font-size: 25px;
 	}
 
-	#contact .mb-4{
-	font-size:25px;
+	#contact .mb-4 {
+		font-size: 18px;
 	}
 
-	#contact .info-wrap p a{
-	font-size:25px;
+	#contact .info-wrap p a {
+		font-size: 18px;
 	}
 
 	#contact .info-wrap .dbox p span {
-		font-size:25px;
+		font-size: 18px;
 	}
 
 	#contact .info-wrap .dbox p {
-    font-size: 25px;
+		font-size: 18px;
 	}
 
-	#footer p,a{
-		font-size:20px;
+	#footer p,
+	a {
+		font-size: 14px;
+	}
+
+	#services ul li {
+		width: auto;
+		height: fit-content;
+		display: flex;
+		align-items: center;
+		margin: 1.5em;
+		cursor: pointer;
+		padding: 1em;
+		background: rgb(43, 43, 43);
+		position: relative;
+		color: white;
+		border-radius: 5px;
+		font-size: 15px;
+	}
+
+	#header-title-inside {
+		margin: 0px;
+		width: fit-content;
+	}
+
+	#header-title-inside h1 {
+		font-size: 25px;
 	}
 }
 
