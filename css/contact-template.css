@@ -74,12 +74,12 @@
 }
 
 .screen-body {
-    display: flex;
+    /* display: flex; */
 }
 
 .screen-body-item {
     flex: 1;
-    padding: 50px;
+    padding: 20px;
 }
 
 .screen-body-item.left {

@@ -791,7 +791,7 @@ li {
 
 #services {
 	overflow-x: hidden;
-	padding: 20px;
+	padding: 100px 20px;
 	height: fit-content;
 	background: rgb(0, 0, 0, 7%);
 }
@@ -908,7 +908,7 @@ li {
 }
 
 .screen-body {
-    background: beige;
+    background: white;
 }
 
 /* Footer Section*/
@@ -932,6 +932,10 @@ li {
 
 .iFrame1 {
 	border: 0px;
+}
+
+#resume {
+	padding: 100px 0px;
 }
 
 @media (max-width: 1090px) {
@@ -975,7 +979,7 @@ li {
 
 	p,
 	a {
-		font-size: 10px;
+		/* font-size: 15px; */
 	}
 
 	#menu a.navbar-brand {
