@@ -3,10 +3,8 @@
     min-height: 100vh;
 }
 
-.container {
-    flex: 0 1 700px;
+.contact .container {
     margin: auto;
-    padding: 10px;
 }
 
 .screen {
@@ -38,6 +36,7 @@
 }
 
 .screen-header-left {
+    display: flex;
     margin-right: auto;
 }
 
@@ -51,7 +50,7 @@
 }
 
 .screen-header-button.close {
-    background: #ed1c6f;
+    background: #ff0a0a;
 }
 
 .screen-header-button.maximize {
@@ -93,7 +92,7 @@
     flex-direction: column;
     position: relative;
     color: #ea1d6f;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .app-title:after {

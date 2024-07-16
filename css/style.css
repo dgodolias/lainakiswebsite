@@ -907,6 +907,10 @@ li {
 	height: 100%;
 }
 
+.screen-body {
+    background: beige;
+}
+
 /* Footer Section*/
 #footer {
 	background: #dfdfdf;
