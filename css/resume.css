@@ -29,6 +29,7 @@ html {
 }
 
 body {
+  height: fit-content;
   padding: 50px;
   margin: 0;
   line-height: inherit

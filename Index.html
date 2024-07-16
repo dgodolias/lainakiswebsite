@@ -291,10 +291,19 @@
       license: "GPLv3",
       log: true,
       autoResize: true,
-      heightCalculationMethod: 'bodyScroll'
-    }, '.iFrame1');
-  </script>
+      checkOrigin: false,
+      heightCalculationMethod: 'bodyOffset' // or 'max', 'scroll', etc.
+  }, '.iFrame1');
 
+  </script>
+<script>
+  window.addEventListener('resize', function() {
+      var iframes = document.querySelectorAll('.iFrame1');
+      iframes.forEach(function(iframe) {
+          iframe.iFrameResizer.resize();
+      });
+  });
+</script>
 
   <div style="clear: both;"></div>
   <div style="clear: both;"></div>
