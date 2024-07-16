@@ -1092,7 +1092,7 @@ li {
 
 	p,
 	a {
-		font-size: 8px;
+		font-size: 15px;
 	}
 
 	#menu a.navbar-brand {
@@ -1240,11 +1240,6 @@ li {
 
 	h2 {
 		font-size: 29px;
-	}
-
-	p,
-	a {
-		font-size: 10px;
 	}
 
 	#menu a.navbar-brand {
