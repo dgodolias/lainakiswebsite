@@ -395,7 +395,8 @@ hr {
 	font-family: 'Nvm', fallback;
 	font-size: 24px;
 	font-weight: 700;
-	color: #000000;
+	color: #ffffff;
+	text-shadow: 6px 6px 7px #000000;
 	text-transform: uppercase;
 	text-shadow: darkblue;
 }
@@ -403,7 +404,7 @@ hr {
 #menu.navbar-default .navbar-nav>li>a {
 	font-family: 'Nvm', fallback;
 	text-transform: uppercase;
-	color: #000000;
+	color: #ffffff;
 	font-size: 15px;
 	font-weight: 400;
 	padding: 8px 2px;
