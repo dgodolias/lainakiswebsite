@@ -675,7 +675,7 @@ a:focus,
 }
 
 li {
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 }
 
 /* About Section */
@@ -725,6 +725,10 @@ li {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+#about {
+    background: rgb(148 148 148);
 }
 
 #about h3 {
@@ -804,7 +808,7 @@ li {
 	overflow-x: hidden;
 	padding: 100px 20px;
 	height: fit-content;
-	background: rgb(0, 0, 0, 7%);
+	background: #5a5d5c;
 }
 
 .service-row1 {
@@ -860,7 +864,7 @@ li {
 #services ul li::before {
 	left: 0%;
 	height: 130%;
-	background: linear-gradient(to right, #147015, #48d400);
+	background: linear-gradient(45deg, black, transparent);
 }
 
 #services ul li::after {
@@ -946,6 +950,7 @@ li {
 }
 
 #resume {
+	background: rgb(148, 148, 148);
 	padding: 100px 0px;
 }
 

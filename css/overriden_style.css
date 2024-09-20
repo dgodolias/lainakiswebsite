@@ -1,6 +1,6 @@
 .coloured-faded-text {
     /* Apply the same linear gradient */
-    background: linear-gradient(to right, #9ca5ff 0%, #64cf94 100%);
+    background: white;
     /* Use the background as the text color */
     -webkit-background-clip: text;
     background-clip: text;
@@ -26,7 +26,7 @@
 #about h2::after {
     position: absolute;
     content: "";
-    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    background: linear-gradient(to right, #ffffff 0%, #0c0c0c 100%);
     height: 4px;
     width: 60px;
     bottom: 0;
