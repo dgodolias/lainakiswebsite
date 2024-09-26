@@ -1,0 +1,11 @@
+
+
+---
+
+This project includes third-party components under different licenses. See below for details.
+
+### Third-Party Licenses
+
+This project uses `iframe-resizer`, which is licensed under the GNU General Public License version 3 (GPLv3).
+
+You can find the full text of the GPLv3 license in the `licenses/iframe-resizer-GPLv3.txt` file.
