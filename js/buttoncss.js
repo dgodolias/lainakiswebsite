@@ -73,7 +73,7 @@ document.getElementById('option3').addEventListener('click', function () {
     document.querySelectorAll('p').forEach(function (el) {
         el.style.color = 'black';
     });
-    document.getElementById('contact').style.background = "-webkit-linear-gradient(top, rgb(34 71 62) 80%, rgb(229, 229, 229) 100%)";
+    document.getElementById('contact').style.background = "-webkit-linear-gradient(top, rgb(34 71 62) 50%, rgb(229, 229, 229) 100%)";
     document.querySelectorAll('.header-shadow').forEach(function (el) {
         el.style.visibility = 'hidden';
     });
