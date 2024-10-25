@@ -1076,12 +1076,6 @@ li {
 }
 
 /* Other Styles Remain Unchanged */
-.coloured-faded-text {
-    background: white;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 #about h3 {
     font-size: 22px;
