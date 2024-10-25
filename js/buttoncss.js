@@ -14,7 +14,6 @@ document.getElementById('option1').addEventListener('click', function () {
     document.getElementById('services').style = "overflow-x: hidden; padding: 100px 20px; height: fit-content; background: -webkit-linear-gradient(right top, #5a5d5c 0%, #1b7983 100%);";
     document.getElementById('resume').style = "background: #e5e5e5; padding: 100px 0px;";
     document.querySelectorAll('p').forEach(function (el) {
-        el.style.fontSize = '15px';
         el.style.color = 'black';
     });
     document.getElementById('contact').style = "padding: 160px 40px; position: relative; height: fit-content; background: -webkit-linear-gradient(right bottom, rgb(90, 93, 92) 0%, rgb(27, 121, 131) 100%);";
