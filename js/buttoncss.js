@@ -1,43 +1,49 @@
+
 document.getElementById('option1').addEventListener('click', function () {
     console.log('Option 1 clicked');
-    document.querySelector('.wrapper').style = "justify-content: center; display: flex; font-family: 'Source Sans Pro', sans-serif; color: white; font-weight: 300; background: -webkit-linear-gradient(top left, #1b7983 0%, #5a5d5c 100%); top: 50%; left: 0; width: 100%; height: 1000px; overflow: hidden; position: relative; z-index: 1;";
+    // Reset to default styles
+    document.querySelector('.wrapper').style.background = "";
     document.querySelectorAll('.coloured-faded-text').forEach(function (el) {
-        el.style = "background: -webkit-linear-gradient(top left, #1b7983 0%, #5a5d5c 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;";
+        el.style.background = "";
     });
-        document.querySelectorAll('.episkepsi-text li').forEach(function (el) {
-      el.style.color = 'black';
+    document.querySelectorAll('.episkepsi-text li').forEach(function (el) {
+        el.style.color = '';
     });
-    document.getElementById('about').style = "background: #e5e5e5; padding: 200px 0;";
+    document.getElementById('about').style.background = "";
     document.querySelectorAll('#about h2::after').forEach(function (el) {
-        el.style = "position: absolute; content: ''; background: -webkit-linear-gradient(top left, #1b7983 0%, #5a5d5c 100%); height: 4px; width: 60px; bottom: 0; left: 0;";
+        el.style.background = "";
     });
-    document.getElementById('services').style = "overflow-x: hidden; padding: 100px 20px; height: fit-content; background: -webkit-linear-gradient(right top, #5a5d5c 0%, #1b7983 100%);";
-    document.getElementById('resume').style = "background: #e5e5e5; padding: 100px 0px;";
+    document.querySelectorAll('.services-text').forEach(function (el) {
+        el.style.textShadow = "";
+    });
+    document.getElementById('services').style.background = "";
+    document.getElementById('resume').style.background = "";
     document.querySelectorAll('p').forEach(function (el) {
-        el.style.color = 'black';
+        el.style.color = '';
     });
-    document.getElementById('contact').style = "padding: 160px 40px; position: relative; height: fit-content; background: -webkit-linear-gradient(right bottom, rgb(90, 93, 92) 0%, rgb(27, 121, 131) 100%);";
+    document.getElementById('contact').style.background = "";
 });
 
 document.getElementById('option2').addEventListener('click', function () {
     console.log('Option 2 clicked');
-    // Apply different styles for option 2
-    document.querySelector('.wrapper').style = "/* Add your custom styles for option 2 here */";
+    document.querySelector('.wrapper').style.background = "-webkit-linear-gradient(top, rgb(91, 179, 157) 80%, rgb(229, 229, 229) 100%)";
     document.querySelectorAll('.coloured-faded-text').forEach(function (el) {
-        el.style = "/* Add your custom styles for option 2 here */";
+        el.style.background = "-webkit-linear-gradient(left top, rgb(67 225 134) 0%, rgb(49 69 58) 100%) text";
     });
-    document.querySelectorAll('li').forEach(function (el) {
-        el.style.color = '/* Add your custom color for option 2 here */';
+    document.querySelectorAll('.episkepsi-text li').forEach(function (el) {
+        el.style.color = 'black';
     });
-    document.getElementById('about').style = "/* Add your custom styles for option 2 here */";
+    document.getElementById('about').style.background = "#e5e5e5";
     document.querySelectorAll('#about h2::after').forEach(function (el) {
-        el.style = "/* Add your custom styles for option 2 here */";
+        el.style.background = "-webkit-linear-gradient(top left, #1b7983 0%, #5a5d5c 100%)";
     });
-    document.getElementById('services').style = "/* Add your custom styles for option 2 here */";
-    document.getElementById('resume').style = "/* Add your custom styles for option 2 here */";
+    document.querySelectorAll('.services-text').forEach(function (el) {
+        el.style.textShadow = "5px 4px 6px black";
+    });
+    document.getElementById('services').style.background = "-webkit-linear-gradient(top, rgb(91 166 179) 60%, rgb(229, 229, 229) 100%)";
+    document.getElementById('resume').style.background = "#e5e5e5";
     document.querySelectorAll('p').forEach(function (el) {
-        el.style.fontSize = '/* Add your custom font size for option 2 here */';
-        el.style.color = '/* Add your custom color for option 2 here */';
+        el.style.color = 'black';
     });
-    document.getElementById('contact').style = "/* Add your custom styles for option 2 here */";
+    document.getElementById('contact').style.background = "rgb(99 99 99)";
 });
