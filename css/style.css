@@ -412,7 +412,7 @@ a:focus,
     top: 0;
     left: 0;
     width: 60%;
-    height: -webkit-fill-available;
+    height: inherit;
 }
 
 .header-overlay {
