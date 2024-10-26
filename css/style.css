@@ -408,7 +408,7 @@ a:focus,
 
 .header-shadow {
     background: rgb(0 0 0 / .2);
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 60%;
@@ -416,7 +416,7 @@ a:focus,
 }
 
 .header-overlay {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
