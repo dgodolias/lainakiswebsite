@@ -41,10 +41,10 @@
 
 .screen-header-button {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 30px;
+    height: 30px;
     margin-right: 3px;
-    border-radius: 8px;
+    border-radius: 30px;
     background: white;
 }
 
@@ -91,7 +91,7 @@
     flex-direction: column;
     position: relative;
     color: #ea1d6f;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .app-title:after {
@@ -100,7 +100,7 @@
     position: absolute;
     left: 0;
     bottom: -10px;
-    width: 25px;
+    width: 80px;
     height: 4px;
     background: #ea1d6f;
 }

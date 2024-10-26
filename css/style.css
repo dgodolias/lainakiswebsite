@@ -148,7 +148,7 @@ h1 {
 h2 {
     text-transform: uppercase;
     margin: 0 0 20px 0;
-    font-size: 36px;
+    font-size: 66px;
     color: #dfdfdf;
 }
 
@@ -168,7 +168,7 @@ h5 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 30px;
     color: #000000;
 }
 
@@ -228,7 +228,7 @@ hr {
 
 #menu a.navbar-brand {
     font-family: 'Nvm', fallback;
-    font-size: 24px;
+    font-size: 44px;
     font-weight: 700;
     color: #ffffff;
     text-shadow: 6px 6px 7px #000000;
@@ -240,7 +240,7 @@ hr {
     font-family: 'Nvm', fallback;
     text-transform: uppercase;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 400;
     padding: 8px 2px;
     border-radius: 0;
@@ -276,7 +276,7 @@ hr {
     left: 0 !important;
     bottom: -1px !important;
     width: 100% !important;
-    height: 2px !important;
+    height: 4px !important;
     background: linear-gradient(to right, #000000 0%, #00ffea 100%) !important;
     content: "" !important;
     transition: width 0.2s !important;
@@ -379,7 +379,7 @@ a:focus,
     top: 50%;
     left: 0;
     width: 100%;
-    height: 1000px;
+    height: 1500px;
     overflow: hidden;
     /* position: relative; */
     z-index: 1;
@@ -492,8 +492,8 @@ a:focus,
 }
 
 #profile-pic {
-    width: 369.6px;
-    height: 240px;
+    width: 800px;
+    height: 900px;
     border-radius: 5px;
     background: url(../img/preview_profile_pic.png) center top no-repeat;
     background-size: cover;
@@ -501,7 +501,7 @@ a:focus,
 
 .episkepsi-text {
     width: fit-content;
-    margin: 30px;
+    margin: 60px;
 }
 
 .episkepsi-text li {
@@ -510,6 +510,7 @@ a:focus,
 
 li {
     color: rgb(255, 255, 255);
+    font-size: 30px;
 }
 
 /* About Section */
@@ -593,6 +594,8 @@ li {
 }
 
 .intro-profile-pic {
+    align-items: center;
+    height: 100%;
     width: 100%;
 }
 
@@ -868,6 +871,11 @@ li {
     .intro_index,
     .intro {
         background-position: center top;
+        /* width: 100vh; */
+    }
+
+    #header {
+        width:100vh;
     }
 
     .flex-container {
