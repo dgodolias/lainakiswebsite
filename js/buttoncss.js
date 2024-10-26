@@ -1,7 +1,7 @@
 document.getElementById('option1').addEventListener('click', function () {
     console.log('Option 1 clicked');
     // Reset to default styles
-    document.querySelector('.wrapper').style.background = "";
+    document.querySelector('#header').style.background = "";
     document.querySelectorAll('.coloured-faded-text').forEach(function (el) {
         el.style.background = "";
     });
@@ -28,7 +28,7 @@ document.getElementById('option1').addEventListener('click', function () {
 
 document.getElementById('option2').addEventListener('click', function () {
     console.log('Option 2 clicked');
-    document.querySelector('.wrapper').style.background = "-webkit-linear-gradient(top, rgb(123 167 227) 80%, rgb(229, 229, 229) 100%)";
+    document.querySelector('#header').style.background = "-webkit-linear-gradient(top, rgb(123 167 227) 80%, rgb(229, 229, 229) 100%)";
     document.querySelectorAll('.coloured-faded-text').forEach(function (el) {
         el.style.background = "-webkit-linear-gradient(left top, rgb(123, 167, 227) 0%, rgb(130, 185, 171) 100%) text";
     });
@@ -54,7 +54,7 @@ document.getElementById('option2').addEventListener('click', function () {
 
 document.getElementById('option3').addEventListener('click', function () {
     console.log('Option 3 clicked');
-    document.querySelector('.wrapper').style.background = "-webkit-linear-gradient(top, rgb(91, 179, 157) 80%, rgb(229, 229, 229) 100%)";
+    document.querySelector('#header').style.background = "-webkit-linear-gradient(top, rgb(91, 179, 157) 80%, rgb(229, 229, 229) 100%)";
     document.querySelectorAll('.coloured-faded-text').forEach(function (el) {
         el.style.background = "-webkit-linear-gradient(left top, rgb(67 225 134) 0%, rgb(49 69 58) 100%) text";
     });
@@ -83,7 +83,7 @@ document.getElementById('option3').addEventListener('click', function () {
 
 document.getElementById('option4').addEventListener('click', function () {
     console.log('Option 4 clicked');
-    document.querySelector('.wrapper').style.background = "-webkit-linear-gradient(top, rgb(123, 167, 227) 80%, rgb(229, 229, 229) 100%)";
+    document.querySelector('#header').style.background = "-webkit-linear-gradient(top, rgb(123, 167, 227) 80%, rgb(229, 229, 229) 100%)";
     document.querySelectorAll('.coloured-faded-text').forEach(function (el) {
         el.style.background = "-webkit-linear-gradient(left top, rgb(123, 167, 227) 0%, rgb(49 69 58) 100%) text";
     });
