@@ -224,6 +224,8 @@ hr {
     padding: 30px;
     border-color: rgba(231, 231, 231, 0);
     box-shadow: 0 0 10px rgb(0 0 0 / 95%);
+    align-items: center;
+    display: flex;
 }
 
 #menu a.navbar-brand {
@@ -555,6 +557,7 @@ li {
     padding: 200px 0;
     z-index: 2;
     position: relative;
+    height: fit-content;
 }
 
 #about h3 {

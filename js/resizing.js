@@ -36,8 +36,17 @@ function adjustFontSize(config) {
 const fontSizeConfig = [
     { selector: '#top-left-name', percentage: 0.013, exponent: 0.9, resizingPoints: [[1200, 25]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.007, exponent: 0.9, resizingPoints: [[1200, 15]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
-    { selector: '#header-title-inside h1', percentage: 0.028, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
-    { selector: '#header', percentage: 0.7, exponent: 0.9, freezeBelow: true, cssProperty: 'height', dependentOn: 'height' }
+    { selector: '#header-title-inside h1', percentage: 0.028, exponent: 0.9, resizingPoints: [[1200, 50]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '#header', percentage: 0.7, exponent: 0.9, freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
+    { selector: '#menu', percentage: 0.06, exponent: 0.9, freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
+    { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.0025, exponent: 1.2, freezeBelow: true, cssProperty: 'padding', dependentOn: 'height' },
+    { selector: '.coloured-faded-text', percentage: 0.014, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '.episkepsi-text li', percentage: 0.007, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '#profile-pic', percentage: 0.25, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'width', dependentOn: 'width' },
+    { selector: '#profile-pic', percentage: 0.3, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
+
+
+
 ];
 
 // Run the function on page load with the configuration
