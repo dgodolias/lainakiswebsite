@@ -41,9 +41,9 @@ const fontSizeConfig = [
     { selector: '#menu', percentage: 0.06, exponent: 0.9, freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.0025, exponent: 1.2, freezeBelow: true, cssProperty: 'padding', dependentOn: 'height' },
     { selector: '.coloured-faded-text', percentage: 0.014, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
-    { selector: '.episkepsi-text li', percentage: 0.007, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
-    { selector: '#profile-pic', percentage: 0.25, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'width', dependentOn: 'width' },
-    { selector: '#profile-pic', percentage: 0.3, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
+    { selector: '.episkepsi-text li', percentage: 0.007, exponent: 0.9, resizingPoints: [[1640, 16]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '#profile-pic', percentage: 0.25, exponent: 0.9, resizingPoints: [[1200, 418]], freezeBelow: true, cssProperty: 'width', dependentOn: 'width' },
+    { selector: '#profile-pic', percentage: 0.3, exponent: 0.9, resizingPoints: [[1200, 512]], freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
 
 
 
