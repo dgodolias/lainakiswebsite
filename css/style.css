@@ -615,7 +615,7 @@ li {
 /* Service Section */
 #services {
     overflow-x: hidden;
-    padding: 250px 20px;
+    padding: 450px 20px;
     height: fit-content;
     background: -webkit-linear-gradient(right top, #5a5d5c 0%, #1b7983 100%);
 }
@@ -816,10 +816,6 @@ li {
         font-size: 20px;
     }
 
-    #menu a.navbar-brand {
-        font-size: 38px;
-    }
-
     #menu.navbar-default .navbar-nav>li>a {
         font-size: 25px;
         margin: 5px 12px;
@@ -856,8 +852,8 @@ li {
         display: block;
     }
 
-    #services .col-xs-12.col-md-6 {
-        /* width: fit-content; */
+    #services {
+        padding: 350px 20px;
     }
 
     #service-row1 {
@@ -874,6 +870,240 @@ li {
         margin: 20px;
         width: 800px;
         height: 600px;
+    }
+}
+
+@media (max-width: 2200px) {
+    #menu a.navbar-brand {
+        font-size: 30px;
+    }
+
+    #menu.navbar-default .navbar-nav>li>a {
+        font-size: 12px;
+    }
+
+    #header-title {
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 500; */
+        margin-bottom: 50px;
+        width: 60%;
+    }
+
+    #header,
+    .intro_index,
+    .intro {
+        background-position: center top;
+    }
+
+    #header{
+        height:1200px;
+    }
+
+    .flex-container {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    #profile-pic,
+    #services-pic {
+        width: 450px;
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 66px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 46px;
+    }
+
+    li {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    #menu.navbar-default .navbar-nav>li>a {
+        font-size: 18px;
+        margin: 5px 12px;
+    }
+
+    #service-row1 {
+        display: grid;
+    }
+
+    #intro-paragraph {
+        width: 100%;
+        margin: 0px;
+        height: fit-content;
+    }
+
+    #about {
+        padding: 300px 0px;
+    }
+
+    #about .container {
+        margin: 0px;
+    }
+
+    .intro-profile-pic {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #intro-container {
+        margin-top: 150px;
+    }
+
+    #about-container {
+        display: block;
+    }
+
+    #services {
+        padding: 250px 20px;
+    }
+
+    #service-row1 {
+        height: 100%;
+    }
+
+    #contact iframe {
+        height: inherit;
+        width: inherit;
+        margin-bottom: 60px;
+    }
+
+    #contact-container-specific {
+        margin: 20px;
+        width: 800px;
+        height: 600px;
+    }
+
+    .app-title {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 1900px) {
+    #menu a.navbar-brand {
+        font-size: 23px;
+    }
+
+    #menu.navbar-default .navbar-nav>li>a {
+        font-size: 12px;
+    }
+
+    #header-title {
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 500; */
+        margin-bottom: 50px;
+        width: 60%;
+    }
+
+    #header,
+    .intro_index,
+    .intro {
+        background-position: center top;
+    }
+
+    #header{
+        height: 900px;
+    }
+
+    .flex-container {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    #profile-pic,
+    #services-pic {
+        width: 350px;
+        height: 440px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 33px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    #menu.navbar-default .navbar-nav>li>a {
+        font-size: 14px;
+        margin: 5px 12px;
+    }
+
+    #service-row1 {
+        display: grid;
+    }
+
+    #intro-paragraph {
+        width: 100%;
+        margin: 0px;
+        height: fit-content;
+    }
+
+    #about {
+        padding: 200px 0px;
+    }
+
+    #about .container {
+        margin: 0px;
+    }
+
+    .intro-profile-pic {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #intro-container {
+        margin-top: 150px;
+    }
+
+    #about-container {
+        display: block;
+    }
+
+    #services {
+        padding: 150px 20px;
+    }
+
+    #service-row1 {
+        height: 100%;
+    }
+
+    #contact iframe {
+        height: inherit;
+        width: inherit;
+        margin-bottom: 60px;
+    }
+
+    #contact-container-specific {
+        margin: 20px;
+        width: 800px;
+        height: 600px;
+    }
+
+    .app-title {
+        font-size: 30px !important;
     }
 }
 
