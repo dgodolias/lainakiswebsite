@@ -3,38 +3,41 @@ function adjustFontSize(config) {
         // Select the target elements
         const elements = document.querySelectorAll(item.selector);
 
-        // Determine the base font size based on the specified percentage of the viewport width
+        // Determine the base value based on the specified percentage of the viewport dimension
         let epsilon = 2.71828; // Approximation of Euler's number
-        let baseFontSize = window.innerWidth * item.percentage * Math.pow(epsilon, item.exponent / epsilon);
+        let dimension = item.dependentOn === 'height' ? window.innerHeight : window.innerWidth;
+        let baseValue = dimension * item.percentage * Math.pow(epsilon, item.exponent / epsilon);
 
-        // Adjust the font size based on resizing points
+        // Adjust the value based on resizing points
         if (item.resizingPoints) {
             item.resizingPoints.forEach(point => {
-                if (window.innerWidth <= point[0]) {
+                if (dimension <= point[0]) {
                     // Calculate the adjustment factor
                     let adjustmentFactor = point[1] / (point[0] * item.percentage * Math.pow(epsilon, item.exponent / epsilon));
-                    baseFontSize = window.innerWidth * item.percentage * Math.pow(epsilon, item.exponent / epsilon) * adjustmentFactor;
+                    baseValue = dimension * item.percentage * Math.pow(epsilon, item.exponent / epsilon) * adjustmentFactor;
 
-                    // If freezeBelow is true, set the font size to the point value and stop further adjustments
+                    // If freezeBelow is true, set the value to the point value and stop further adjustments
                     if (item.freezeBelow) {
-                        baseFontSize = point[1];
+                        baseValue = point[1];
                         return;
                     }
                 }
             });
         }
 
-        // Apply the calculated font size in pixels to each element
+        // Apply the calculated value in pixels to each element
         elements.forEach(element => {
-            element.style.fontSize = baseFontSize + 'px';
+            element.style[item.cssProperty] = baseValue + 'px';
         });
     });
 }
 
-// Configuration for different elements and their respective percentages, exponents, resizing points, and freezeBelow flag
+// Configuration for different elements and their respective percentages, exponents, resizing points, freezeBelow flag, CSS property, and dependent dimension
 const fontSizeConfig = [
-    { selector: '#top-left-name', percentage: 0.013, exponent: 0.9, resizingPoints: [[1200, 25]], freezeBelow: true },
-    { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.007, exponent: 0.9, resizingPoints: [[1200, 15]], freezeBelow: true }
+    { selector: '#top-left-name', percentage: 0.013, exponent: 0.9, resizingPoints: [[1200, 25]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.007, exponent: 0.9, resizingPoints: [[1200, 15]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '#header-title-inside h1', percentage: 0.028, exponent: 0.9, resizingPoints: [[1200, 30]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '#header', percentage: 0.7, exponent: 0.9, freezeBelow: true, cssProperty: 'height', dependentOn: 'height' }
 ];
 
 // Run the function on page load with the configuration
