@@ -213,7 +213,7 @@ hr {
 
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #menu-container {
@@ -221,7 +221,7 @@ hr {
 }
 
 #menu.navbar-default {
-    padding: 30px;
+    padding: 15px;
     border-color: rgba(231, 231, 231, 0);
     box-shadow: 0 0 10px rgb(0 0 0 / 95%);
     align-items: center;
@@ -503,7 +503,7 @@ a:focus,
 
 .episkepsi-text {
     flex-wrap: wrap;
-    width: 30%;
+    width: 50%;
     margin: 60px;
     min-width: 363px;
 }
@@ -709,6 +709,21 @@ li {
     background-size: cover;
 }
 
+/* biography Section */
+
+#biography {
+	margin: 50px;
+	height: 90vh;
+}
+
+.pdf-iframe-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    width: -webkit-fill-available;
+}
+
 /* Contact Section */
 #contact-container {
     align-items: center;
@@ -731,7 +746,29 @@ li {
 }
 
 #contact .flex-container {
+    /* flex-wrap: wrap; */
     height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+#contact-container-specific {
+    width: 50%;
+}
+
+@media screen and (max-width: 1176px) {
+    #contact-flex-container {
+        flex-direction: column;
+    }
+
+    #contact-container-specific {
+        width: auto;
+        margin: 20px;
+    }
+}
+
+#gmaps-iframe {
+    width: 70%;
 }
 
 .screen-body {
@@ -761,18 +798,6 @@ li {
     border: 0px;
 }
 
-#resume {
-    background: #e5e5e5;
-    padding: 100px 0px;
-    position: relative;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 2s ease-out;
-}
-
-#resume.in-view {
-    opacity: 1;
-}
 
 /* Other Styles Remain Unchanged */
 
