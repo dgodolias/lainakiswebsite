@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Observe elements with .episkepsi-text class
     observeElements('.service-row1', 0.3);
+    observeElements('.about-row1', 0.3);
     observeElements('#header-title-inside', 0.4);
     observeElements('#resume', 0.2);
 });
