@@ -431,6 +431,10 @@ a:focus,
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    #header-title {
+        width: 100%;
+    }
 }
 
 #header-title-inside {
@@ -512,7 +516,13 @@ a:focus,
     flex-wrap: wrap;
     width: 30%;
     margin: 60px;
-    min-width: 363px;
+}
+
+@media screen and (max-width: 627px) {
+    .episkepsi-text {
+        width: 100%;
+    }
+    
 }
 
 .episkepsi-text li {
@@ -610,6 +620,12 @@ li {
     margin: 0px 40px;
 }
 
+@media screen and (max-width: 627px) {
+    .intro-profile-pic {
+        width: 100%;
+    }
+}
+
 #carousel img {
     width: 400px;
     background: #dfdfdf;
@@ -632,6 +648,10 @@ li {
     opacity: 0;
     transform: translateX(-50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#about-container {
+    width: inherit;
 }
 
 .about-row1.in-view {
@@ -803,6 +823,13 @@ li {
     #contact-container-specific {
         width: auto;
         margin: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #contact-container-specific {
+        width: inherit;
     }
 }
 

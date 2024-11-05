@@ -42,7 +42,7 @@ const fontSizeConfig = [
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.012, exponent: 1, cssProperty: 'margin-top', dependentOn: 'height' },
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.012, exponent: 1, cssProperty: 'margin-bottom', dependentOn: 'height' },
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.0045, exponent: 1, cssProperty: 'padding', dependentOn: 'height' },
-    { selector: '#header-title-inside h1', percentage: 0.023, exponent: 0.9, resizingPoints: [[1200, 0.05]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
+    { selector: '#header-title-inside h1', percentage: 0.023, exponent: 0.9, resizingPoints: [[1200, 0.05], [854,0.06]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'width' },
     { selector: '#header', percentage: 0.7, exponent: 0.9, freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
     { selector: '.carousel', percentage: 0.25, exponent: 1, cssProperty: 'height', dependentOn: 'height' },
     { selector: '.carousel', percentage: 0.25, exponent: 1, cssProperty: 'width', dependentOn: 'height' },
