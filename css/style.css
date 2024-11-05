@@ -742,6 +742,12 @@ li {
 #biography {
 	margin: 50px;
 	height: 90vh;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+#biography.in-view {
+    opacity: 1;
 }
 
 .pdf-iframe-container {
@@ -766,6 +772,12 @@ li {
     position: relative;
     height: fit-content;
     background: -webkit-linear-gradient(right bottom, rgb(90, 93, 92) 0%, rgb(27, 121, 131) 100%);
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+#contact.in-view {
+    opacity: 1;
 }
 
 #contact-info {

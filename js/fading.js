@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observeElements('.service-row1', 0.3);
     observeElements('.about-row1', 0.3);
     observeElements('#header-title-inside', 0.4);
-    observeElements('#resume', 0.2);
+    observeElements('#biography', 0.2);
+    observeElements('#contact', 0.2);
 });
 
