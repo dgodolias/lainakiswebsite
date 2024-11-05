@@ -391,7 +391,6 @@ a:focus,
 #header-title {
     justify-content: flex-start;
     align-items: center;
-    height: -webkit-fill-available;
     font-size: 50px;
     color: #dfdfdf;
     font-weight: 700;
@@ -425,6 +424,13 @@ a:focus,
     width: 100%;
     height: -webkit-fill-available;
     z-index: 3;
+}
+
+@media screen and (max-width: 1049px) {
+    .header-overlay {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 #header-title-inside {
@@ -526,20 +532,11 @@ li {
 }
 
 .carousel {
-	/* align-items: center; */
-	/* justify-content: center; */
-	/* margin: auto; */
-	height: 500px;
-	/* Adjust this value as needed */
-	width: 500px;
 	overflow: hidden;
-	/* Hide anything that goes outside the carousel */
 	border-radius: 15px;
 	flex: 1;
 	max-width: 500px;
-	/* Adjust this value as needed */
 	position: relative;
-	/* Add relative positioning */
 }
 
 .carousel img {
@@ -705,7 +702,7 @@ li {
     position: absolute;
     z-index: -1;
     border-radius: 5px;
-    width: 105%;
+    width: 120%;
     transition: all 0.4s;
 }
 
@@ -778,13 +775,12 @@ li {
 
 #contact .flex-container {
     /* flex-wrap: wrap; */
-    height: 100%;
     z-index: 2;
     position: relative;
 }
 
 #contact-container-specific {
-    width: 50%;
+    width: 40%;
 }
 
 @media screen and (max-width: 1176px) {
@@ -799,7 +795,8 @@ li {
 }
 
 #gmaps-iframe {
-    width: 70%;
+    width: -webkit-fill-available;
+    height: inherit;
 }
 
 .screen-body {
