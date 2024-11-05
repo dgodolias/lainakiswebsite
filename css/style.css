@@ -640,6 +640,7 @@ li {
 }
 
 .about-row1 {
+    position: relative;
     flex-wrap: wrap;
     align-items: center;
     display: flex;
@@ -661,6 +662,7 @@ li {
 
 @media screen and (max-width: 910px) {
     .about-row1 {
+        right: -15;
         justify-content: center;
     }
 }
