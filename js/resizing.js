@@ -48,7 +48,7 @@ const fontSizeConfig = [
     { selector: '.carousel', percentage: 0.25, exponent: 1, cssProperty: 'width', dependentOn: 'height' },
     { selector: '.carousel', percentage: 0.25, exponent: 1, cssProperty: 'maxWidth', dependentOn: 'height' },
     { selector: '.coloured-faded-text', percentage: 0.02, exponent: 0.9, cssProperty: 'fontSize', dependentOn: 'height' },
-    { selector: '.episkepsi-text li', percentage: 0.01, exponent: 0.9, cssProperty: 'fontSize', dependentOn: 'height' },
+    { selector: '.episkepsi-text li', percentage: 0.011, exponent: 1,resizingPoints: [[640, 0.02]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'height' },
     { selector: '#profile-pic', percentage: 0.25, exponent: 0.9, resizingPoints: [[1200, 0.348]], freezeBelow: true, cssProperty: 'width', dependentOn: 'width' },
     { selector: '#profile-pic', percentage: 0.3, exponent: 0.9, resizingPoints: [[1200, 0.426]], freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
     { selector: '#about', percentage: 0.15, exponent: 1, cssProperty: 'padding-top', dependentOn: 'height' },
@@ -56,12 +56,12 @@ const fontSizeConfig = [
     { selector: '.services-text h2', percentage: 0.024, exponent: 1, cssProperty: 'fontSize', dependentOn: 'height' },
     { selector: '#services', percentage: 0.22, exponent: 1, cssProperty: 'padding-top', dependentOn: 'height' },
     { selector: '#services', percentage: 0.22, exponent: 1, cssProperty: 'padding-bottom', dependentOn: 'height' },
-    { selector: '.services-text li', percentage: 0.011, exponent: 1, cssProperty: 'fontSize', dependentOn: 'height' },
+    { selector: '.services-text li', percentage: 0.011, exponent: 1, resizingPoints: [[640, 0.02]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'height' },
     { selector: '#contact-container-specific', percentage: 0.35, exponent: 0.9, resizingPoints: [[900, 0.4]], freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
     { selector: '.screen-header-button', percentage: 0.007, exponent: 0.9, resizingPoints: [[900, 0.02]], freezeBelow: true, cssProperty: 'width', dependentOn: 'width' },
     { selector: '.screen-header-button', percentage: 0.007, exponent: 0.9, resizingPoints: [[900, 0.02]], freezeBelow: true, cssProperty: 'height', dependentOn: 'width' },
-    { selector: '.app-title span', percentage: 0.015, exponent: 1,  cssProperty: 'fontSize', dependentOn: 'height' },
-    { selector: '.app-form p', percentage: 0.01, exponent: 1,  cssProperty: 'fontSize', dependentOn: 'height' },
+    { selector: '.app-title span', percentage: 0.015, exponent: 1, resizingPoints: [[640, 0.03]], freezeBelow: true,  cssProperty: 'fontSize', dependentOn: 'height' },
+    { selector: '.app-form p', percentage: 0.01, exponent: 1, resizingPoints: [[640, 0.02]], freezeBelow: true,  cssProperty: 'fontSize', dependentOn: 'height' },
 ];
 
 // Run the function on page load with the configuration
