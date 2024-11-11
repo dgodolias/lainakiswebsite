@@ -241,6 +241,7 @@ hr {
 }
 
 #menu.navbar-default .navbar-nav>li>a {
+    text-shadow: 2px 2px 3px #000000;
     font-family: 'Nvm', fallback;
     text-transform: uppercase;
     color: #ffffff;
@@ -510,6 +511,40 @@ a:focus,
     border-radius: 5px;
     background: url(../img/IMG_2455.JPG) center top no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 3600px) {
+    #profile-pic {
+        width: 600px;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 2600px) {
+    #profile-pic {
+        width: 450px;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #profile-pic {
+        width: 350px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    #profile-pic {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #profile-pic {
+        width: 250px;
+        height: 300px;
+    }
 }
 
 .episkepsi-text {
@@ -823,7 +858,7 @@ li {
     }
 
     #contact-container-specific {
-        width: auto;
+        width: 100%;
         margin: 20px;
     }
 }

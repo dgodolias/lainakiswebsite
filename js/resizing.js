@@ -28,15 +28,20 @@ function adjustFontSize(config) {
         // Apply the calculated value in pixels to each element
         elements.forEach(element => {
             element.style[item.cssProperty] = baseValue + 'px';
+
+            // Special handling for carousel maxWidth
+            if (item.selector === '.carousel' && item.cssProperty === 'maxWidth' && baseValue >= 0.9 * window.innerWidth) {
+                element.style.maxWidth = 0.9 * window.innerWidth + 'px';
+            }
         });
     });
 }
 
 // Configuration for different elements and their respective percentages, exponents, resizing points, freezeBelow flag, CSS property, and dependent dimension
 const fontSizeConfig = [
-    { selector: '#top-left-name', percentage: 0.015, exponent: 0.9, cssProperty: 'fontSize', dependentOn: 'height' },
+    { selector: '#top-left-name', percentage: 0.018, exponent: 0.9, cssProperty: 'fontSize', dependentOn: 'height' },
     { selector: '#top-left-name', percentage: 0.006, exponent: 1, cssProperty: 'margin', dependentOn: 'height' },
-    { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.01, exponent: 1, cssProperty: 'fontSize', dependentOn: 'height' },
+    { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.013, exponent: 1, cssProperty: 'fontSize', dependentOn: 'height' },
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.006, exponent: 1, cssProperty: 'margin-left', dependentOn: 'width' },
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.006, exponent: 1, cssProperty: 'margin-right', dependentOn: 'width' },
     { selector: '#menu.navbar-default .navbar-nav>li>a', percentage: 0.012, exponent: 1, cssProperty: 'margin-top', dependentOn: 'height' },
@@ -49,8 +54,6 @@ const fontSizeConfig = [
     { selector: '.carousel', percentage: 0.3, exponent: 1, cssProperty: 'maxWidth', dependentOn: 'height' },
     { selector: '.coloured-faded-text', percentage: 0.02, exponent: 0.9, cssProperty: 'fontSize', dependentOn: 'height' },
     { selector: '.episkepsi-text li', percentage: 0.011, exponent: 1,resizingPoints: [[640, 0.02]], freezeBelow: true, cssProperty: 'fontSize', dependentOn: 'height' },
-    { selector: '#profile-pic', percentage: 0.4, exponent: 0.9, resizingPoints: [[1200, 0.348]], freezeBelow: true, cssProperty: 'width', dependentOn: 'width' },
-    { selector: '#profile-pic', percentage: 0.6, exponent: 0.9, resizingPoints: [[1200, 0.426]], freezeBelow: true, cssProperty: 'height', dependentOn: 'height' },
     { selector: '#about', percentage: 0.15, exponent: 1, cssProperty: 'padding-top', dependentOn: 'height' },
     { selector: '#about', percentage: 0.15, exponent: 1, cssProperty: 'padding-bottom', dependentOn: 'height' },
     { selector: '.services-text h2', percentage: 0.024, exponent: 1, cssProperty: 'fontSize', dependentOn: 'height' },
